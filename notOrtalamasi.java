@@ -44,7 +44,7 @@ public class notOrtalamasi {
    
     notumuz.close();
 
-    
+    //finish
     
 }
 
