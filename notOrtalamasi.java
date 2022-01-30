@@ -35,8 +35,21 @@ public class notOrtalamasi {
     double orta = (mat + fiz + kim + turk + tar + muz) / 6;
     
     boolean a = (orta >= 60.0); 
+
+    boolean b = (mat >= 50.0);
+
+    boolean c = (fiz >= 50.0);
+
+    boolean d = (kim >= 50.0);
+
+    boolean e = (turk >= 50.0);
+
+    boolean f = (tar >= 50.0);
     
-    String durum = a ? "Geçtiniz ": "Kaldınız"; 
+    boolean g = (muz >= 50.0);
+    
+    
+    String durum = a && b && c && d && e && f && g ? "Geçtiniz ": "Kaldınız (Derslerinizden biri 50'nin altında veya ortalamanız 60'nın altında)"; 
     
     System.out.println(durum);
     
